@@ -1,0 +1,87 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background: linear-gradient(to right, #1a202c, #2d3748) !important; /* Thêm !important để ghi đè */
+}
+
+body.dark .bg-white {
+  background-color: #2d3748 !important;
+  color: #e2e8f0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .bg-blue-50 {
+  background-color: #4a5568 !important;
+  transition: background-color 0.3s ease;
+}
+
+body.dark .bg-gray-50 {
+  background-color: #4a5568 !important;
+  transition: background-color 0.3s ease;
+}
+
+body.dark header {
+  background: linear-gradient(to bottom, #2f855a, #2c5282) !important;
+  transition: background 0.3s ease;
+}
+
+body.dark nav {
+  background-color: #1a202c !important;
+  transition: background-color 0.3s ease;
+}
+
+body.dark .text-gray-800 {
+  color: #e2e8f0 !important;
+  transition: color 0.3s ease;
+}
+
+body.dark .text-gray-700 {
+  color: #a0aec0 !important;
+  transition: color 0.3s ease;
+}
+
+body.dark .text-gray-600 {
+  color: #cbd5e0 !important;
+  transition: color 0.3s ease;
+}
+
+body.dark nav a {
+  color: #e2e8f0 !important;
+  transition: color 0.3s ease;
+}
+
+body.dark nav a:hover {
+  color: #63b3ed !important;
+}
+
+nav a {
+  transition: color 0.3s ease;
+}
+
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+div.shadow-md {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+div.shadow-md:hover {
+  transform: scale(1.05);
+  background-color: #e0f2fe;
+}
+
+body.dark div.shadow-md:hover {
+  background-color: #718096 !important;
+}

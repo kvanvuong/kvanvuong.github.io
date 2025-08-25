@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu bản thân - K Văn Vương</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-teal-100 min-h-screen flex flex-col transition-colors duration-300">
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800">K Văn Vương</a>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="text-gray-600 hover:text-blue-600">Về tôi</a></li>
+        <li><a href="#education" class="text-gray-600 hover:text-blue-600">Học vấn</a></li>
+        <li><a href="#skills" class="text-gray-600 hover:text-blue-600">Kỹ năng</a></li>
+        <li><a href="#projects" class="text-gray-600 hover:text-blue-600">Dự án</a></li>
+        <li><a href="#contact" class="text-gray-600 hover:text-blue-600">Liên hệ</a></li>
+      </ul>
+      <button id="dark-mode-toggle" class="ml-4 text-gray-600 hover:text-blue-600">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <header class="text-center py-32 bg-gradient-to-b from-teal-300 to-blue-300 flex items-center justify-center">
+    <div class="flex flex-col md:flex-row items-center max-w-4xl mx-auto px-6">
+      <img src="https://avatars.githubusercontent.com/u/110322750?v=4" alt="K Văn Vương" class="w-48 h-48 rounded-full shadow-xl mb-6 md:mb-0 md:mr-8">
+      <div class="text-left">
+        <h1 class="text-5xl font-bold text-gray-800 mb-4">Xin chào, mình là K Văn Vương</h1>
+        <p class="text-xl text-gray-600">Sinh viên Công nghệ Thông tin & Người yêu sáng tạo</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 flex-1 pt-20">
+    <section id="about" class="bg-white bg-opacity-90 rounded-xl shadow-lg p-8 mb-10" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6"><i class="fas fa-user mr-2 text-blue-600"></i> Về tôi</h2>
+      <p class="text-gray-700 leading-relaxed">Mình là sinh viên Công nghệ Thông tin, đam mê học hỏi và khám phá các công nghệ mới. Mình thích tạo ra các sản phẩm sáng tạo, từ lập trình web đến chỉnh sửa video trên các nền tảng như CapCut, TikTok, và YouTube. Với nền tảng kiến thức về lập trình và công cụ hỗ trợ, mình luôn sẵn sàng tham gia các dự án thú vị và đóng góp vào đội ngũ chuyên nghiệp.</p>
+    </section>
+
+    <section id="education" class="bg-white bg-opacity-90 rounded-xl shadow-lg p-8 mb-10" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6"><i class="fas fa-graduation-cap mr-2 text-blue-600"></i> Học vấn</h2>
+      <p class="text-gray-700">Sinh viên chuyên ngành Công nghệ Thông tin tại [Tên trường đại học của bạn]. Tập trung vào lập trình, cơ sở dữ liệu và công nghệ đa phương tiện.</p>
+    </section>
+
+    <section id="skills" class="bg-white bg-opacity-90 rounded-xl shadow-lg p-8 mb-10" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6"><i class="fas fa-tools mr-2 text-blue-600"></i> Kỹ năng</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-blue-50 p-6 rounded-lg shadow-md flex items-center">
+          <i class="fas fa-code text-3xl text-blue-600 mr-4"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Lập trình Web</h3>
+            <p>HTML, CSS</p>
+          </div>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-md flex items-center">
+          <i class="fas fa-database text-3xl text-blue-600 mr-4"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Cơ sở dữ liệu</h3>
+            <p>SQL Server</p>
+          </div>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-md flex items-center">
+          <i class="fas fa-video text-3xl text-blue-600 mr-4"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Chỉnh sửa Video</h3>
+            <p>CapCut, TikTok, YouTube</p>
+          </div>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-md flex items-center">
+          <i class="fas fa-robot text-3xl text-blue-600 mr-4"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Công cụ AI</h3>
+            <p>Tra cứu và sử dụng AI cơ bản</p>
+          </div>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-md flex items-center">
+          <i class="fas fa-file-alt text-3xl text-blue-600 mr-4"></i>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Văn phòng</h3>
+            <p>Word, Excel</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-white bg-opacity-90 rounded-xl shadow-lg p-8 mb-10" data-aos="fade-up" data-aos-delay="300">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6"><i class="fas fa-project-diagram mr-2 text-blue-600"></i> Dự án</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <a href="https://github.com/kvanvuong567/oop.github.io" target="_blank" class="text-blue-600 hover:underline font-semibold text-lg">oop.github.io</a>
+          <p class="text-gray-600 mt-2">No description provided.</p>
+          <p class="text-sm text-gray-500">Ngôn ngữ: C#</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <a href="https://github.com/kvanvuong567/Socket---He-Dieu-Hanh" target="_blank" class="text-blue-600 hover:underline font-semibold text-lg">Socket---He-Dieu-Hanh</a>
+          <p class="text-gray-600 mt-2">No description provided.</p>
+          <p class="text-sm text-gray-500">Ngôn ngữ: C#</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <a href="https://github.com/kvanvuong567/Windownform" target="_blank" class="text-blue-600 hover:underline font-semibold text-lg">Windownform</a>
+          <p class="text-gray-600 mt-2">No description provided.</p>
+          <p class="text-sm text-gray-500">No language specified</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <a href="https://github.com/kvanvuong567/webapi" target="_blank" class="text-blue-600 hover:underline font-semibold text-lg">webapi</a>
+          <p class="text-gray-600 mt-2">No description provided.</p>
+          <p class="text-sm text-gray-500">No language specified</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <a href="https://github.com/kvanvuong567/REST_API_TEMPLATE" target="_blank" class="text-blue-600 hover:underline font-semibold text-lg">REST_API_TEMPLATE</a>
+          <p class="text-gray-600 mt-2">No description provided.</p>
+          <p class="text-sm text-gray-500">Ngôn ngữ: C#</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-white bg-opacity-90 rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="400">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6"><i class="fas fa-envelope mr-2 text-blue-600"></i> Liên hệ</h2>
+      <p class="text-gray-700 mb-2">Email: <a href="mailto:kvanvuong567@gmail.com" class="text-blue-600 hover:underline">kvanvuong567@gmail.com</a></p>
+      <p class="text-gray-700">GitHub: <a href="https://github.com/kvanvuong567" target="_blank" class="text-blue-600 hover:underline">github.com/kvanvuong567</a></p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
