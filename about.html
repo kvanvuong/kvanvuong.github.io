@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- about.html -->
 <!DOCTYPE html>
 <html lang="vi">
@@ -51,4 +52,74 @@
     </div>
   </footer>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="vi" id="html-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Về tôi - K Văn Vương</title>
+  <meta name="description" content="Giới thiệu về K Văn Vương, sinh viên Công nghệ Thông tin đam mê sáng tạo và công nghệ.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" as="style">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html, body {
+      background: linear-gradient(to right, #e6f3fa, #e6fffa);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col transition-opacity duration-300 opacity-0" onload="document.body.style.opacity='1'">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-20">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">K Văn Vương</a>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-600 hover:text-blue-600">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <ul id="nav-links" class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html" class="text-gray-600 hover:text-blue-600">Trang chủ</a></li>
+        <li><a href="about.html" class="text-gray-600 hover:text-blue-600">Về tôi</a></li>
+        <li><a href="education.html" class="text-gray-600 hover:text-blue-600">Học vấn</a></li>
+        <li><a href="skills.html" class="text-gray-600 hover:text-blue-600">Kỹ năng</a></li>
+        <li><a href="projects.html" class="text-gray-600 hover:text-blue-600">Dự án</a></li>
+        <li><a href="contact.html" class="text-gray-600 hover:text-blue-600">Liên hệ</a></li>
+      </ul>
+      <button id="dark-mode-toggle" class="ml-4 text-gray-600 hover:text-blue-600">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <main class="max-w-6xl mx-auto p-6 flex-1 pt-20">
+    <section id="about" class="bg-white bg-opacity-95 rounded-xl shadow-lg p-8" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6 flex items-center">
+        <i class="fas fa-user mr-3 text-blue-600"></i> Về tôi
+      </h2>
+      <p class="text-gray-700 leading-relaxed">
+        Mình là K Văn Vương, sinh viên chuyên ngành Công nghệ Thông tin tại Đại học Yersin Đà Lạt. Mình đam mê khám phá các công nghệ mới và sáng tạo nội dung. Từ lập trình web đến chỉnh sửa video trên các nền tảng như CapCut, TikTok, và YouTube, mình luôn tìm cách biến ý tưởng thành hiện thực. Với tinh thần học hỏi không ngừng, mình sẵn sàng tham gia các dự án thú vị và đóng góp giá trị cho đội ngũ.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner mt-auto py-6">
+    <div class="max-w-6xl mx-auto text-center text-gray-600">
+      © 2025 K Văn Vương. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+>>>>>>> f12ab9e5894df99a946ea340789077933cf99934
 </html>

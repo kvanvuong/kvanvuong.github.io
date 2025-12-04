@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* styles.css */
 html, body {
   background: linear-gradient(to right, #e6f3fa, #e6fffa);
@@ -38,4 +39,99 @@ html, body {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+=======
+/* Áp dụng nền mặc định cho chế độ sáng */
+html, body {
+  background: linear-gradient(to right, #e6f3fa, #e6fffa);
+}
+
+/* Chế độ tối */
+body.dark-mode {
+  background: linear-gradient(to right, #1a202c, #2d3748);
+  color: #e2e8f0;
+}
+
+body.dark-mode nav {
+  background: #2d3748;
+}
+
+body.dark-mode nav a {
+  color: #e2e8f0;
+}
+
+body.dark-mode nav a:hover {
+  color: #63b3ed;
+}
+
+body.dark-mode footer {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+body.dark-mode section {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+body.dark-mode .bg-blue-50 {
+  background: #4a5568;
+}
+
+body.dark-mode .text-gray-600 {
+  color: #a0aec0;
+}
+
+body.dark-mode .text-gray-700 {
+  color: #cbd5e0;
+}
+
+body.dark-mode .text-gray-800 {
+  color: #e2e8f0;
+}
+
+/* Responsive menu */
+#nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #nav-links.active {
+  background: #2d3748;
+}
+
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+  }
+  #nav-links.active li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Hover effects for cards */
+.bg-blue-50, .bg-gray-50 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-blue-50:hover, .bg-gray-50:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in effect */
+body {
+  transition: opacity 0.3s ease-in-out;
+>>>>>>> f12ab9e5894df99a946ea340789077933cf99934
 }
