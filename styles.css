@@ -1,58 +1,14 @@
-/* Áp dụng nền mặc định cho chế độ sáng */
+/* styles.css */
 html, body {
   background: linear-gradient(to right, #e6f3fa, #e6fffa);
 }
 
-/* Chế độ tối */
-body.dark-mode {
-  background: linear-gradient(to right, #1a202c, #2d3748);
-  color: #e2e8f0;
-}
-
-body.dark-mode nav {
-  background: #2d3748;
-}
-
-body.dark-mode nav a {
-  color: #e2e8f0;
-}
-
-body.dark-mode nav a:hover {
-  color: #63b3ed;
-}
-
-body.dark-mode footer {
-  background: #2d3748;
-  color: #e2e8f0;
-}
-
-body.dark-mode section {
-  background: #2d3748;
-  color: #e2e8f0;
-}
-
-body.dark-mode .bg-blue-50 {
-  background: #4a5568;
-}
-
-body.dark-mode .text-gray-600 {
-  color: #a0aec0;
-}
-
-body.dark-mode .text-gray-700 {
-  color: #cbd5e0;
-}
-
-body.dark-mode .text-gray-800 {
-  color: #e2e8f0;
-}
-
 /* Responsive menu */
-#nav-links.active {
+#menu-toggle:checked ~ #nav-links {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60px;
+  top: 100%;
   left: 0;
   width: 100%;
   background: #fff;
@@ -60,15 +16,11 @@ body.dark-mode .text-gray-800 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-body.dark-mode #nav-links.active {
-  background: #2d3748;
-}
-
 @media (max-width: 768px) {
   #nav-links {
     display: none;
   }
-  #nav-links.active li {
+  #nav-links li {
     margin: 0.5rem 0;
   }
 }
@@ -86,9 +38,4 @@ body.dark-mode #nav-links.active {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
-}
-
-/* Fade-in effect */
-body {
-  transition: opacity 0.3s ease-in-out;
 }
