@@ -1,126 +1,2183 @@
-<<<<<<< HEAD
-<!-- index.html -->
-<!DOCTYPE html>
+}
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-gradient gradient-1"></div>
+        <div class="bg-gradient gradient-2"></div>
+        <div class="bg-gradient gradient-3"></div>
+    </div>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">KVV</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Về Tôi</a></li>
+                <li><a href="#experience">Kinh Nghiệm</a></li>
+                <li><a href="#projects">Dự Án</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-label">👋 XIN CHÀO, TÔI LÀ</span>
+                <h1>K Văn Vương<br><span class="gradient-text">Full Stack Developer</span></h1>
+                <p>Đam mê sáng tạo và xây dựng những ứng dụng web hiện đại, tối ưu với trải nghiệm người dùng tuyệt vời. Chuyên về phát triển Full Stack với các công nghệ tiên tiến nhất.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>📬</span>
+                        <span>Liên Hệ Tôi</span>
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <span>💼</span>
+                        <span>Xem Dự Án</span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/kvanvuong" target="_blank" class="social-link" title="GitHub">
+                        <span>🐙</span>
+                    </a>
+                    <a href="mailto:kvanvuong567@gmail.com" class="social-link" title="Email">
+                        <span>📧</span>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-link" title="Facebook">
+                        <span>📘</span>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+                        <span>💼</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/avatar.jpg" alt="K Văn Vương" class="profile-image">
+                </div>
+                <div class="floating-card card-1">
+                    <div class="icon">💻</div>
+                    <h4>Clean Code</h4>
+                    <p>Best Practices</p>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="icon">🚀</div>
+                    <h4>Fast Performance</h4>
+                    <p>Optimized</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="3">0</div>
+                <div class="stat-label">Năm Kinh Nghiệm</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">Dự Án Hoàn Thành</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Khách Hàng Hài Lòng</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="10">0</div>
+                <div class="stat-label">Công Nghệ Thành Thạo</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="section-header reveal">
+                <span class="section-label">Giới Thiệu</span>
+                <h2 class="section-title">Về Tôi</h2>
+                <p class="section-description">Tìm hiểu thêm về hành trình và kỹ năng của tôi trong lĩnh vực phát triển phần mềm</p>
+            </div>
+            <div class="about-content">
+                <div class="reveal">
+                    <p class="about-text">
+                        Xin chào! Tôi là K Văn Vương, một lập trình viên Full Stack đam mê công nghệ và sáng tạo. Tôi đã tốt nghiệp chuyên ngành Công Nghệ Phần Mềm tại trường Đại Học Yersin Đà Lạt với nền tảng vững chắc về khoa học máy tính và kỹ năng lập trình.
+                    </p>
+                    <p class="about-text">
+                        Với kinh nghiệm làm việc với nhiều công nghệ hiện đại, tôi có khả năng xây dựng các ứng dụng web từ giao diện người dùng cho đến backend mạnh mẽ. Tôi luôn theo đuổi sự hoàn thiện và tối ưu hóa trong mỗi dự án.
+                    </p>
+                    <ul class="info-list">
+                        <li>
+                            <span class="info-label">🎓 Trường:</span>
+                            <span class="info-value">Đại Học Yersin Đà Lạt</span>
+                        </li>
+                        <li>
+                            <span class="info-label">📚 Chuyên ngành:</span>
+                            <span class="info-value">Công Nghệ Phần Mềm - CNTT</span>
+                        </li>
+                        <li>
+                            <span class="info-label">🐙 GitHub:</span>
+                            <span class="info-value"><a href="https://github.com/kvanvuong" target="_blank">kvanvuong</a></span>
+                        </li>
+                        <li>
+                            <span class="info-label">📧 Email:</span>
+                            <span class="info-value"><a href="mailto:kvanvuong567@gmail.com">kvanvuong567@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <span class="info-label">📍 Địa chỉ:</span>
+                            <span class="info-value">La Dạ, Lâm Đồng, Việt Nam</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-grid reveal">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML & CSS</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Database (SQL/NoSQL)</span>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <div class="section-header reveal">
+                <span class="section-label">Hành Trình</span>
+                <h2 class="section-title">Kinh Nghiệm & Học Vấn</h2>
+                <p class="section-description">Timeline về quá trình học tập và làm việc của tôi</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2024</span>
+                        <h3 class="timeline-title">Cử Nhân Công Nghệ Phần Mềm</h3>
+                        <p class="timeline-subtitle">Đại Học Yersin Đà Lạt</p>
+                        <p class="timeline-description">
+                            Hoàn thành chương trình đào tạo chuyên ngành Công Nghệ Phần Mềm thuộc khoa Công Nghệ Thông Tin với kết quả xuất sắc. Tham gia nhiều dự án thực tế và các cuộc thi lập trình.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Hiện tại</span>
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <p class="timeline-subtitle">Freelancer</p>
+                        <p class="timeline-description">
+                            Phát triển các ứng dụng web và mobile cho nhiều khách hàng khác nhau. Chuyên về React.js, Node.js, và các công nghệ cloud hiện đại. Đảm nhận toàn bộ quy trình từ thiết kế đến triển khai sản phẩm.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3 class="timeline-title">Web Developer Intern</h3>
+                        <p class="timeline-subtitle">Tech Startup Company</p>
+                        <p class="timeline-description">
+                            Tham gia phát triển các tính năng mới cho nền tảng e-commerce. Làm việc với team để tối ưu hóa hiệu suất website và cải thiện trải nghiệm người dùng. Học hỏi về quy trình Agile/Scrum.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <p class="timeline-subtitle">Personal Projects</p>
+                        <p class="timeline-description">
+                            Xây dựng các dự án cá nhân để rèn luyện kỹ năng lập trình. Tạo ra nhiều ứng dụng web sử dụng các framework và thư viện phổ biến. Đóng góp code cho các dự án open source trên GitHub.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <div class="section-header reveal">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Dự Án Của Tôi</h2>
+                <p class="section-description">Một số dự án tiêu biểu mà tôi đã thực hiện</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">💼</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Nền tảng thương mại điện tử hoàn chỉnh với giỏ hàng, thanh toán online, quản lý đơn hàng và admin dashboard. Tích hợp nhiều phương thức thanh toán.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/kvanvuong" class="project-link" target="_blank">
+                                <span>🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🔗</span>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Redux</span>
+                        </div>
+                        <h3 class="project-title">Social Media App</h3>
+                        <p class="project-description">
+                            Ứng dụng mạng xã hội di động với tính năng đăng bài, chat realtime, stories và follow/unfollow. Sử dụng Firebase để xác thực và lưu trữ dữ liệu.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/kvanvuong" class="project-link" target="_blank">
+                                <span>🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🔗</span>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">🎮</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Canvas</span>
+                            <span class="project-tag">WebGL</span>
+                        </div>
+                        <h3 class="project-title">Interactive Game</h3>
+                        <p class="project-description">
+                            Game 2D tương tác với đồ họa mượt mà, hệ thống điểm số, leaderboard và nhiều level khác nhau. Sử dụng Canvas API và các thuật toán game development.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/kvanvuong" class="project-link" target="_blank">
+                                <span>🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🔗</span>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">PostgreSQL</span>
+                        </div>
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Dashboard phân tích dữ liệu với biểu đồ tương tác, báo cáo realtime và xuất file Excel/PDF. Tích hợp API để thu thập dữ liệu từ nhiều nguồn.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/kvanvuong" class="project-link" target="_blank">
+                                <span>🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🔗</span>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">🤖</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">AI/ML</span>
+                            <span class="project-tag">TensorFlow</span>
+                            <span class="project-tag">Flask</span>
+                        </div>
+                        <h3 class="project-title">AI Chatbot</h3>
+                        <p class="project-description">
+                            Chatbot thông minh sử dụng machine learning để trả lời câu hỏi tự động. Tích hợp natural language processing và được train trên dataset lớn.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/kvanvuong" class="project-link" target="_blank">
+                                <span>🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🔗</span>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">🎨</div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Tailwind</span>
+                            <span class="project-tag">Strapi</span>
+                        </div>
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Website portfolio cá nhân với animations mượt mà, responsive design và CMS để quản lý nội dung. Tối ưu SEO và hiệu suất tải trang.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/kvanvuong" class="project-link" target="_blank">
+                                <span>🐙</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="project-link">
+                                <span>🔗</span>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="section-header reveal">
+                <span class="section-label">Kết Nối</span>
+                <h2 class="section-title">Liên Hệ Với Tôi</h2>
+                <p class="section-description">Hãy liên hệ nếu bạn muốn hợp tác hoặc có câu hỏi</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:kvanvuong567@gmail.com">kvanvuong567@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐙</div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/kvanvuong" target="_blank">github.com/kvanvuong</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📘</div>
+                        <div class="contact-details">
+                            <h4>Facebook</h4>
+                            <p><a href="https://www.facebook.com" target="_blank">K Văn Vương</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Địa Chỉ</h4>
+                            <p>La Dạ, Lâm Đồng, Việt Nam</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <label for="name">Tên của bạn</label>
+                        <input type="text" id="name" name="name" placeholder="Nhập tên..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Nhập email..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Tiêu đề</label>
+                        <input type="text" id="subject" name="subject" placeholder="Nhập tiêu đề..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tin nhắn</label>
+                        <textarea id="message" name="message" placeholder="Nhập tin nhắn của bạn..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Gửi Tin Nhắn 🚀
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">
+                Made with <span class="heart">❤️</span> by K Văn Vương
+            </p>
+            <p class="footer-text" style="margin-top: 10px;">
+                © 2025 K Văn Vương. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loading = document.querySelector('.loading');
+            setTimeout(() => {
+                loading.classList.add('hidden');
+            }, 500);
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Create particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Scroll reveal animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate stats numbers
+        function animateStats() {
+            const stats = document.querySelectorAll('.stat-number');
+            
+            stats.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                let current = 0;
+                const increment = target / 50;
+                const duration = 2000;
+                const stepTime = duration / 50;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        stat.textContent = target + '+';
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, stepTime);
+            });
+        }
+
+        // Trigger stats animation when visible
+        let statsAnimated = false;
+        window.addEventListener('scroll', () => {
+            if (!statsAnimated) {
+                const statsSection = document.querySelector('.stats');
+                const statsSectionTop = statsSection.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (statsSectionTop < windowHeight - 100) {
+                    animateStats();
+                    statsAnimated = true;
+                }
+            }
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('.contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simulate sending (you can replace this with actual API call)
+            alert(`Cảm ơn ${name}! Tin nhắn của bạn đã được gửi thành công. Tôi sẽ phản hồi sớm nhất có thể.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Typing effect for hero text (optional enhancement)
+        const heroTitle = document.querySelector('.hero h1');
+        if (heroTitle) {
+            const originalText = heroTitle.innerHTML;
+            heroTitle.innerHTML = '';
+            let charIndex = 0;
+            
+            function typeWriter() {
+                if (charIndex < originalText.length) {
+                    heroTitle.innerHTML += originalText.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 50);
+                } else {
+                    heroTitle.innerHTML = originalText;
+                }
+            }
+            
+            setTimeout(typeWriter, 500);
+        }
+
+        // Add hover effect sound (optional - commented out by default)
+        // const buttons = document.querySelectorAll('.btn, .social-link, .project-card');
+        // buttons.forEach(button => {
+        //     button.addEventListener('mouseenter', () => {
+        //         // You can add a subtle hover sound effect here
+        //     });
+        // });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroContent = document.querySelector('.hero-content');
+            const heroImage = document.querySelector('.hero-image');
+            
+            if (heroContent && window.innerWidth > 968) {
+                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+            if (heroImage && window.innerWidth > 968) {
+                heroImage.style.transform = `translateY(${scrolled * 0.2}px)`;
+            }
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        
+        function highlightNav() {
+            const scrollY = window.pageYOffset;
+            
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.style.color = 'var(--primary)';
+                        } else {
+                            link.style.color = '';
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', highlightNav);
+
+        // Add loading animation for images
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.5s ease';
+        });
+
+        // Mouse move effect for gradient background
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
+            
+            const gradient1 = document.querySelector('.gradient-1');
+            const gradient2 = document.querySelector('.gradient-2');
+            
+            if (gradient1) {
+                gradient1.style.transform = `translate(${mouseX * 50}px, ${mouseY * 50}px) rotate(${mouseX * 360}deg)`;
+            }
+            if (gradient2) {
+                gradient2.style.transform = `translate(${-mouseX * 50}px, ${-mouseY * 50}px) rotate(${-mouseX * 360}deg)`;
+            }
+        });
+
+        // Add cursor trail effect (optional - can be enabled)
+        let cursorTrail = [];
+        const maxTrailLength = 20;
+        
+        document.addEventListener('mousemove', (e) => {
+            cursorTrail.push({ x: e.clientX, y: e.clientY, time: Date.now() });
+            
+            // Remove old trail points
+            cursorTrail = cursorTrail.filter(point => Date.now() - point.time < 1000);
+            
+            if (cursorTrail.length > maxTrailLength) {
+                cursorTrail.shift();
+            }
+        });
+
+        // Keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            // ESC to close mobile menu
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+            
+            // Arrow keys for navigation
+            if (e.key === 'ArrowUp' && window.scrollY > 0) {
+                window.scrollBy({ top: -100, behavior: 'smooth' });
+            }
+            if (e.key === 'ArrowDown') {
+                window.scrollBy({ top: 100, behavior: 'smooth' });
+            }
+        });
+
+        // Performance optimization - Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Add console welcome message
+        console.log('%c👋 Xin chào! Welcome to my portfolio!', 'font-size: 20px; font-weight: bold; color: #6366f1;');
+        console.log('%c🚀 Developed by K Văn Vương', 'font-size: 14px; color: #ec4899;');
+        console.log('%c💼 GitHub: https://github.com/kvanvuong', 'font-size: 12px; color: #94a3b8;');
+        console.log('%c📧 Email: kvanvuong567@gmail.com', 'font-size: 12px; color: #94a3b8;');
+
+        // Easter egg - Konami code
+        let konamiCode = [];
+        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.key);
+            konamiCode = konamiCode.slice(-10);
+            
+            if (konamiCode.join(',') === konamiSequence.join(',')) {
+                document.body.style.animation = 'rainbow 5s linear infinite';
+                setTimeout(() => {
+                    document.body.style.animation = '';
+                }, 5000);
+                alert('🎉 Konami Code activated! You found the easter egg!');
+            }
+        });
+
+        // Add rainbow animation for easter egg
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes rainbow {
+                0% { filter: hue-rotate(0deg); }
+                100% { filter: hue-rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Service Worker registration (for PWA - optional)
+        if ('serviceWorker' in navigator) {
+            // Uncomment to enable PWA
+            // navigator.serviceWorker.register('/sw.js')
+            //     .then(reg => console.log('Service Worker registered'))
+            //     .catch(err => console.log('Service Worker registration failed'));
+        }
+
+        // Add print styles handling
+        window.addEventListener('beforeprint', () => {
+            document.body.classList.add('printing');
+        });
+        
+        window.addEventListener('afterprint', () => {
+            document.body.classList.remove('printing');
+        });
+
+        // Analytics tracking (you can replace with your analytics code)
+        function trackEvent(category, action, label) {
+            console.log(`Event tracked: ${category} - ${action} - ${label}`);
+            // Example: gtag('event', action, { 'event_category': category, 'event_label': label });
+        }
+
+        // Track button clicks
+        document.querySelectorAll('.btn, .project-link, .social-link').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const btnText = e.currentTarget.textContent.trim();
+                trackEvent('Button', 'Click', btnText);
+            });
+        });
+
+        // Track form submission
+        contactForm.addEventListener('submit', () => {
+            trackEvent('Form', 'Submit', 'Contact Form');
+        });
+
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('✅ Portfolio website loaded successfully!');
+            
+            // Add fade-in animation to body
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Prevent right-click on images (optional - for protecting portfolio images)
+        // Uncomment if needed
+        // document.querySelectorAll('img').forEach(img => {
+        //     img.addEventListener('contextmenu', (e) => {
+        //         e.preventDefault();
+        //         return false;
+        //     });
+        // });
+
+        // Add copy protection (optional)
+        // Uncomment if needed
+        // document.addEventListener('copy', (e) => {
+        //     e.preventDefault();
+        //     return false;
+        // });
+
+        // Performance monitoring
+        window.addEventListener('load', () => {
+            if (window.performance) {
+                const perfData = window.performance.timing;
+                const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                console.log(`⚡ Page load time: ${pageLoadTime}ms`);
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K Văn Vương - Trang chủ</title>
-  <meta name="description" content="Hồ sơ cá nhân của K Văn Vương - Sinh viên Công nghệ Thông tin, đam mê lập trình web và sáng tạo nội dung.">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="min-h-screen flex flex-col">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full z-20">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-bold text-gray-800">K Văn Vương</a>
-      <div class="md:hidden">
-        <label for="menu-toggle" class="text-gray-600 hover:text-blue-600 cursor-pointer">
-          <i class="fas fa-bars"></i>
-        </label>
-      </div>
-      <input type="checkbox" id="menu-toggle" class="hidden">
-      <ul id="nav-links" class="hidden md:flex space-x-6 font-medium">
-        <li><a href="index.html" class="text-gray-600 hover:text-blue-600">Trang chủ</a></li>
-        <li><a href="about.html" class="text-gray-600 hover:text-blue-600">Về tôi</a></li>
-        <li><a href="education.html" class="text-gray-600 hover:text-blue-600">Học vấn</a></li>
-        <li><a href="skills.html" class="text-gray-600 hover:text-blue-600">Kỹ năng</a></li>
-        <li><a href="projects.html" class="text-gray-600 hover:text-blue-600">Dự án</a></li>
-        <li><a href="contact.html" class="text-gray-600 hover:text-blue-600">Liên hệ</a></li>
-      </ul>
-    </div>
-  </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Văn Vương - Full Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --dark: #0f172a;
+            --dark-light: #1e293b;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
 
-  <!-- Hero Section -->
-  <header class="relative text-center pt-32 pb-24 bg-gradient-to-b from-teal-300 to-blue-300">
-    <div class="flex flex-col md:flex-row items-center max-w-5xl mx-auto px-6">
-      <img src="assets/avatar.jpg" alt="K Văn Vương" class="w-44 h-44 rounded-full shadow-2xl mb-6 md:mb-0 md:mr-10 border-4 border-white">
-      <div class="text-left">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-3">Xin chào, mình là <span class="text-blue-700">K Văn Vương</span></h1>
-        <p class="text-lg md:text-xl text-gray-700">Sinh viên Công nghệ Thông tin & Người yêu sáng tạo</p>
-        <a href="about.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Tìm hiểu thêm</a>
-      </div>
-    </div>
-  </header>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <!-- Footer -->
-  <footer class="bg-white shadow-inner mt-auto py-6">
-    <div class="max-w-6xl mx-auto text-center text-gray-600">
-      © 2025 K Văn Vương. All rights reserved.
-    </div>
-  </footer>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="vi" id="html-root">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K Văn Vương - Trang chủ</title>
-  <meta name="description" content="Hồ sơ cá nhân của K Văn Vương - Sinh viên Công nghệ Thông tin, đam mê lập trình web và sáng tạo nội dung.">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" as="style">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="preload" href="styles.css" as="style">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Áp dụng nền mặc định để tránh nhấp nháy trắng */
-    html, body {
-      background: linear-gradient(to right, #e6f3fa, #e6fffa);
-    }
-  </style>
-</head>
-<body class="min-h-screen flex flex-col transition-opacity duration-300 opacity-0" onload="document.body.style.opacity='1'">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full z-20">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-bold text-gray-800">K Văn Vương</a>
-      <div class="md:hidden">
-        <button id="menu-toggle" class="text-gray-600 hover:text-blue-600">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-      <ul id="nav-links" class="hidden md:flex space-x-6 font-medium">
-        <li><a href="index.html" class="text-gray-600 hover:text-blue-600">Trang chủ</a></li>
-        <li><a href="about.html" class="text-gray-600 hover:text-blue-600">Về tôi</a></li>
-        <li><a href="education.html" class="text-gray-600 hover:text-blue-600">Học vấn</a></li>
-        <li><a href="skills.html" class="text-gray-600 hover:text-blue-600">Kỹ năng</a></li>
-        <li><a href="projects.html" class="text-gray-600 hover:text-blue-600">Dự án</a></li>
-        <li><a href="contact.html" class="text-gray-600 hover:text-blue-600">Liên hệ</a></li>
-      </ul>
-      <button id="dark-mode-toggle" class="ml-4 text-gray-600 hover:text-blue-600">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
-  </nav>
+        html {
+            scroll-behavior: smooth;
+        }
 
-  <!-- Hero Section -->
-  <header class="relative text-center pt-32 pb-24 bg-gradient-to-b from-teal-300 to-blue-300">
-    <div class="flex flex-col md:flex-row items-center max-w-5xl mx-auto px-6">
-      <img src="assets/avatar.jpg" alt="K Văn Vương" class="w-44 h-44 rounded-full shadow-2xl mb-6 md:mb-0 md:mr-10 border-4 border-white" data-aos="zoom-in">
-      <div class="text-left" data-aos="fade-up">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-3">Xin chào, mình là <span class="text-blue-700">K Văn Vương</span></h1>
-        <p class="text-lg md:text-xl text-gray-700">Sinh viên Công nghệ Thông tin & Người yêu sáng tạo</p>
-        <a href="about.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Tìm hiểu thêm</a>
-      </div>
-    </div>
-  </header>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
 
-  <!-- Footer -->
-  <footer class="bg-white shadow-inner mt-auto py-6">
-    <div class="max-w-6xl mx-auto text-center text-gray-600">
-      © 2025 K Văn Vương. All rights reserved.
-    </div>
-  </footer>
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(125deg, #0f172a 0%, #1e293b 100%);
+        }
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="script.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true });
-  </script>
-</body>
->>>>>>> f12ab9e5894df99a946ea340789077933cf99934
-</html>
+        .bg-gradient {
+            position: absolute;
+            filter: blur(100px);
+            opacity: 0.5;
+        }
+
+        .gradient-1 {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .gradient-2 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+            bottom: -150px;
+            left: -150px;
+            animation: float 15s ease-in-out infinite reverse;
+        }
+
+        .gradient-3 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 10s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(100px, 100px) rotate(90deg); }
+            50% { transform: translate(0, 200px) rotate(180deg); }
+            75% { transform: translate(-100px, 100px) rotate(270deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.3; }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 15px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background: var(--text);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 100px 50px 50px;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-content {
+            animation: fadeInLeft 1s ease;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50px;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff 0%, var(--text-muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text);
+            border: 2px solid rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-outline:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 1s ease;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--primary);
+            border-radius: 30px;
+            z-index: -1;
+        }
+
+        .image-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 30px;
+            z-index: -2;
+            opacity: 0.2;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+            display: block;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .floating-card {
+            position: absolute;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: floatCard 3s ease-in-out infinite;
+        }
+
+        @keyframes floatCard {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .card-1 {
+            top: 50px;
+            right: -50px;
+            animation-delay: 0s;
+        }
+
+        .card-2 {
+            bottom: 80px;
+            left: -50px;
+            animation-delay: 1s;
+        }
+
+        .floating-card .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .floating-card h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: var(--text);
+        }
+
+        .floating-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 80px 50px;
+            background: rgba(30, 41, 59, 0.3);
+            border-top: 1px solid rgba(99, 102, 241, 0.1);
+            border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 30px;
+            background: rgba(99, 102, 241, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+            background: rgba(99, 102, 241, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* About Section */
+        .about {
+            padding: 120px 50px;
+        }
+
+        .about-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50px;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff 0%, var(--text-muted) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-description {
+            font-size: 20px;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 18px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .info-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .info-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .info-value {
+            color: var(--text-muted);
+        }
+
+        .info-value a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-value a:hover {
+            color: var(--accent);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .skill-item {
+            background: rgba(99, 102, 241, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateX(10px);
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 16px;
+        }
+
+        .skill-percent {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 10px;
+            position: relative;
+            transition: width 1s ease;
+        }
+
+        .skill-progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 120px 50px;
+            background: rgba(30, 41, 59, 0.3);
+        }
+
+        .experience-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--primary), var(--accent));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 60px;
+            padding-left: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border: 4px solid var(--dark);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+        }
+
+        .timeline-content {
+            background: rgba(30, 41, 59, 0.5);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateX(10px);
+        }
+
+        .timeline-date {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .timeline-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .timeline-subtitle {
+            font-size: 16px;
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .timeline-description {
+            color: var(--text-muted);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 120px 50px;
+        }
+
+        .projects-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .project-card {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.3));
+        }
+
+        .project-content {
+            padding: 30px;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .project-tag {
+            padding: 6px 14px;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .project-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-link {
+            padding: 10px 20px;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .project-link:hover {
+            background: rgba(99, 102, 241, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 50px;
+            background: rgba(30, 41, 59, 0.3);
+        }
+
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-top: 60px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: rgba(99, 102, 241, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 18px;
+            color: var(--text);
+            margin-bottom: 5px;
+        }
+
+        .contact-details p, .contact-details a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: var(--primary);
+        }
+
+        .contact-form {
+            background: rgba(30, 41, 59, 0.5);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border-color: transparent;
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            padding: 50px;
+            text-align: center;
+            border-top: 1px solid rgba(99, 102, 241, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .footer-text .heart {
+            color: var(--accent);
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 24px;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+        }
+
+        /* Particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: particleFloat 20s infinite;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translate(0, 0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            100% {
+                transform: translate(100px, -1000px);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero-container {
+                gap: 50px;
+            }
+
+            .hero h1 {
+                font-size: 60px;
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            }
+        }
+
+        @media (max-width: 968px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(15, 23, 42, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                padding: 50px;
+                gap: 30px;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(8px, 8px);
+            }
+
+            .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+
+            .hero-container,
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .floating-card {
+                display: none;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section-title {
+                font-size: 42px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-container,
+            .hero,
+            .stats,
+            .about,
+            .experience,
+            .projects,
+            .contact,
+            footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .section-description {
+                font-size: 16px;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .timeline {
+                padding-left: 30px;
+            }
+
+            .timeline-item {
+                padding-left: 25px;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+        }
+
+        /* Loading animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(99, 102, 241, 0.1);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Scroll reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+</style>
