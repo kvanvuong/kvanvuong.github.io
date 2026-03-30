@@ -16,11 +16,7 @@
     }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
     html{scroll-behavior:smooth;}
-    body{font-family:'Be Vietnam Pro',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased;}
-
-    #cur{position:fixed;top:0;left:0;width:10px;height:10px;background:var(--neon);border-radius:50%;pointer-events:none;z-index:99999;mix-blend-mode:screen;transition:transform .15s,background .15s;}
-    #ring{position:fixed;top:0;left:0;width:34px;height:34px;border:1.5px solid rgba(0,229,160,.35);border-radius:50%;pointer-events:none;z-index:99998;transition:transform .3s cubic-bezier(.165,.84,.44,1);}
-    body:has(a:hover) #cur,body:has(button:hover) #cur{background:var(--hot);transform:scale(2.5);}
+    body{font-family:'Be Vietnam Pro',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
 
     body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:-2;background:linear-gradient(rgba(0,229,160,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,160,.025) 1px,transparent 1px);background-size:56px 56px;}
 
@@ -218,14 +214,11 @@
     @media(max-width:600px){
       .con{padding:0 20px;}.hero-name{font-size:40px;letter-spacing:-1px;}
       .stitle{font-size:30px;}.sn{font-size:46px;}
-      #cur,#ring{display:none;}body{cursor:auto;}
       footer{padding:28px 20px;flex-direction:column;}
     }
   </style>
 </head>
 <body>
-  <div id="cur"></div>
-  <div id="ring"></div>
   <div class="orb o1"></div>
   <div class="orb o2"></div>
 
@@ -475,12 +468,6 @@
   <script>
   // Loading
   window.addEventListener('load',()=>setTimeout(()=>document.getElementById('load').classList.add('out'),1300));
-
-  // Cursor
-  const cur=document.getElementById('cur'),ring=document.getElementById('ring');
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
-  (function anim(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;cur.style.transform=`translate(${mx-5}px,${my-5}px)`;ring.style.transform=`translate(${rx-17}px,${ry-17}px)`;requestAnimationFrame(anim);})();
 
   // Nav
   const navEl=document.getElementById('nav');
